@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#44aa00">
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:padding="5dp"
+
+        >
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:text="配送日期"
+            android:textColor="#dddddd"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_title">
+
+        <include
+            android:id="@+id/ll_rationdate"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            android:layout_weight="0.81"
+            layout="@layout/date_choose_layout" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/aaaa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/postInfo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="当前订单:"
+        android:textColor="#dddddd"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_OrderNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/postInfo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/bbbb"
+
+        android:textColor="#dddddd"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/bbbb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/aaaa"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:text="发货箱号:"
+        android:textColor="#dddddd"
+        android:textSize="18sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="10dp"
+
+        android:id="@+id/rv_orderInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_FboxNum"
+
+        android:background="#dddddd"
+
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/postInfo"
+        android:layout_marginRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/aaaa"
+        android:layout_alignRight="@+id/tv_FboxNum"
+        android:layout_below="@+id/linearLayout1"
+
+        android:padding="-5dp"
+        android:text="提交发货"
+        android:textSize="22sp" />
+
+    <ImageButton
+        android:id="@+id/ib_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/tv_FboxNum"
+        android:layout_marginBottom="18dp"
+        android:src="@mipmap/add_circle_green_"
+        android:background="@android:color/transparent" />
+
+    <TextView
+        android:id="@+id/tv_FboxNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bbbb"
+        android:layout_alignLeft="@+id/tv_OrderNum"
+        android:singleLine="true"
+        android:textColor="#fff"
+        android:textSize="15sp" />
+
+</RelativeLayout>

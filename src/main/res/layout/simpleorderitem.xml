@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="订单号:"
+        android:textSize="16sp"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_orderCode"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="I20155555555"
+        android:gravity="end"
+        android:paddingRight="20dp"
+
+        />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/title"
+        android:id="@+id/title2"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="批次号:"
+        android:textSize="16sp"
+
+        />
+
+    <TextView
+        android:layout_toRightOf="@+id/title2"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/title"
+        android:id="@+id/bocihao"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="8-191"
+
+        android:gravity="end"
+        android:paddingRight="20dp" />
+
+    <View
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#aaaaaa"
+        android:layout_marginLeft="10dp"
+
+        />
+
+    <View
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/title2"
+        android:background="#aaaaaa" />
+
+</RelativeLayout>

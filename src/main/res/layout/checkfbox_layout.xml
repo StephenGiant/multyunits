@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#44aa00">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <multyunits.wochu.com.multyunits.wiget.DatePickWiget
+            android:layout_marginTop="20dp"
+
+            android:layout_marginLeft="5dp"
+            android:id="@+id/ll_date_choose"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            ></multyunits.wochu.com.multyunits.wiget.DatePickWiget>
+
+        <TextView
+            android:layout_marginTop="22dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="复核位:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#dddddd"
+
+            />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/sorting_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="20sp"
+            android:textColor="#dddddd" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/shadow">
+
+        <EditText
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/et_fbox"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="发货箱条码"
+            android:textColorHint="#888888"
+            android:textColor="#000"
+            android:singleLine="true">
+
+
+        </EditText>
+
+        <Button
+
+            android:layout_marginRight="10dp"
+            android:id="@+id/button_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="确定"
+
+            android:textSize="20sp"
+
+
+            />
+
+        <Button
+
+            android:id="@+id/button_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+
+            android:layout_marginRight="2dp"
+            android:textSize="20sp"
+
+
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发货箱号:"
+            android:textColor="#dddddd"
+            android:textSize="22sp" />
+
+        <TextView
+
+            android:id="@+id/tv_FboxNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:text=""
+            android:textColor="#dddddd"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+
+        >
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    订单号:"
+            android:textColor="#dddddd"
+            android:textSize="22sp" />
+
+        <TextView
+
+            android:id="@+id/tv_orderNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+
+            android:textColor="#dddddd"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="物品总数:"
+            android:textColor="#dddddd"
+            android:textSize="22sp" />
+
+        <TextView
+
+            android:id="@+id/tv_totalCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:textColor="#C51313"
+
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv_goodsDetail"
+
+        >
+
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>
