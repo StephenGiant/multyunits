@@ -340,6 +340,7 @@ private SimpleOrderDetailAdapter adapter;
 		
 		mPlayer.release();
 		mPlayer=null;
+		int x = 0;
 	}
 
 	private String getTotalCount(List<OrderBeanForFbox.GoodsDetail> data){
